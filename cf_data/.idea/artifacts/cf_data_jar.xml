@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="cf_data:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/cf_data_jar</output-path>
+    <root id="archive" name="cf_data.jar">
+      <element id="module-output" name="cf_data" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/gson-2.8.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

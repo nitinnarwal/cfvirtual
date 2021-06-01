@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginBottom="20dp"
+    android:paddingBottom="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/contest_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:text="#1293"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contest_id"
+
+        android:text="Rank : 521"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rank"
+
+        android:text="Points : 1902"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/prev_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/points"
+
+        android:text="Old Rating : 1500"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+
+        android:paddingLeft="10dp"
+
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/next_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prev_rating"
+
+        android:text="New Rating : 1507"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+
+        android:paddingLeft="10dp"
+
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
